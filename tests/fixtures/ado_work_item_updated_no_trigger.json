@@ -1,0 +1,36 @@
+{
+  "subscriptionId": "sub-003",
+  "notificationId": 3,
+  "eventType": "workitem.updated",
+  "resource": {
+    "id": 12345,
+    "workItemId": 12345,
+    "rev": 5,
+    "revisedBy": {
+      "displayName": "Kyle Bring",
+      "uniqueName": "kbring@kithps.com"
+    },
+    "revisedDate": "2026-03-30T14:00:00Z",
+    "fields": {
+      "System.AssignedTo": {
+        "oldValue": { "displayName": "User A" },
+        "newValue": { "displayName": "User B" }
+      }
+    },
+    "revision": {
+      "id": 12345,
+      "rev": 5,
+      "fields": {
+        "System.Title": "Implement feature X",
+        "System.State": "Active",
+        "System.WorkItemType": "User Story",
+        "System.AssignedTo": { "displayName": "User B" }
+      }
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": { "id": "col-001" },
+    "project": { "id": "proj-001" }
+  }
+}

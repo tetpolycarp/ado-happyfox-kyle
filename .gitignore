@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+.python-version
+
+# Docs
+*.md
+*.xlsx
+*.docx
+*.csv
+docs/*.pdf
+docs/*.docx
+
+# Azure Functions
+local.settings.json
+.env
+.azurite/
+bin/
+obj/
+.python_packages/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Testing
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+test-results.xml
+
+# mypy
+.mypy_cache/
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# OS
+.DS_Store
+Thumbs.db

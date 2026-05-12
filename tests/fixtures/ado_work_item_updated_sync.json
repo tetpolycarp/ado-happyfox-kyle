@@ -1,0 +1,41 @@
+{
+  "subscriptionId": "sub-002",
+  "notificationId": 2,
+  "eventType": "workitem.updated",
+  "resource": {
+    "id": 12345,
+    "workItemId": 12345,
+    "rev": 4,
+    "revisedBy": {
+      "displayName": "Kyle Bring",
+      "uniqueName": "kbring@kithps.com"
+    },
+    "revisedDate": "2026-03-30T13:00:00Z",
+    "fields": {
+      "Custom.SyncToHappyFox": {
+        "oldValue": "",
+        "newValue": "Sync Now"
+      }
+    },
+    "revision": {
+      "id": 12345,
+      "rev": 4,
+      "fields": {
+        "System.Title": "Implement feature X",
+        "System.State": "New",
+        "System.Description": "<p>Feature X description</p>",
+        "System.WorkItemType": "User Story",
+        "Microsoft.VSTS.Common.Priority": 2,
+        "Custom.ClientRequested": "Acme Corp;Beta Inc",
+        "Custom.SyncToHappyFox": "Sync Now",
+        "Custom.TestScenarios": "Test scenario 1",
+        "Custom.UIandUXAcceptanceCriteria": "<p>UI/UX criteria</p>"
+      }
+    }
+  },
+  "resourceVersion": "1.0",
+  "resourceContainers": {
+    "collection": { "id": "col-001" },
+    "project": { "id": "proj-001" }
+  }
+}

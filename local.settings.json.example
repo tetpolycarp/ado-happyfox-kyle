@@ -1,0 +1,24 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+
+    "SERVICE_BUS_CONNECTION_STRING": "<your-service-bus-connection-string>",
+    "ADO_PARENT_EVENTS_QUEUE": "ado-parent-events",
+    "ADO_CHILD_EVENTS_QUEUE": "ado-child-events",
+
+    "ADO_ORGANIZATION": "your-org",
+    "ADO_PROJECT": "your-project",
+    "ADO_PAT": "<base64-encoded-pat>",
+    "ADO_WEBHOOK_SECRET": "<hmac-shared-secret>",
+
+    "HAPPYFOX_API_URL": "https://yoursubdomain.happyfox.com/api/1.1/json",
+    "HAPPYFOX_API_KEY": "<happyfox-api-key>",
+    "HAPPYFOX_AUTH_CODE": "<happyfox-auth-code>",
+    "HAPPYFOX_WEBHOOK_SECRET": "<optional-hmac-secret>",
+
+    "LOG_LEVEL": "DEBUG",
+    "ENVIRONMENT": "development"
+  }
+}

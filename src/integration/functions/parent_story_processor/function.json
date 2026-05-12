@@ -1,0 +1,19 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "direction": "in",
+      "name": "msg",
+      "queueName": "%ADO_PARENT_EVENTS_QUEUE%",
+      "connection": "SERVICE_BUS_CONNECTION_STRING"
+    },
+    {
+      "type": "serviceBus",
+      "direction": "out",
+      "name": "child_msg_out",
+      "queueName": "%ADO_CHILD_EVENTS_QUEUE%",
+      "connection": "SERVICE_BUS_CONNECTION_STRING"
+    }
+  ]
+}
