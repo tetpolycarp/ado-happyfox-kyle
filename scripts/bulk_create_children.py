@@ -97,6 +97,7 @@ DESCRIPTION = "System.Description"
 STATE = "System.State"
 WORK_ITEM_TYPE = "System.WorkItemType"
 TEAM_PROJECT = "System.TeamProject"
+TAGS = "System.Tags"
 
 # Standard extended
 PRIORITY = "Microsoft.VSTS.Common.Priority"
@@ -359,6 +360,11 @@ class AdoClient:
             value = parent_fields.get(field_ref)
             if value is not None:
                 child_fields[field_ref] = value
+
+        # Copy tags from parent
+        tags = parent_fields.get(TAGS)
+        if tags:
+            child_fields[TAGS] = tags
 
         return self.create_work_item(
             project=project,
